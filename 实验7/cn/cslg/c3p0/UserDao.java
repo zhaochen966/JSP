@@ -1,18 +1,13 @@
 package cn.spring.c3p0;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.List;
-
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
 import cn.cslg.exp7.UserBean;
 
 public class UserDao extends JdbcDaoSupport {
-	// spring∏Ò Ω
+	// spring Ω
 /*	public UserBean findById(String username) {
 	UserBean userBean = this.getJdbcTemplate().queryForObject("select * from user where username = ?",
 				new RowMapper<UserBean>() {
